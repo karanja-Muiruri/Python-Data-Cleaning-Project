@@ -48,6 +48,4 @@ The data cleaning process involved the following steps:
 
 ### Documentation
 
-For detailed information about the data cleaning process, please refer to the Jupyter notebooks provided in the repository as well as the YouTube link provided above.
-They contain step by step explanations, code samples and documentation showing each stage of the data cleaning process.
-A template to help facilitate the same if you would like to follow along from the YouTube video is also provided within this repository.
+For detailed information about the data cleaning process, please refer to the Jupyter notebooks provided in the repository.
