@@ -15,8 +15,8 @@ The dataset originally includes over 18,000 records, with each record representi
 
 During the initial exploration and analysis of the FIFA21 dataset, several issues were identified:
 
-Missing Values: Columns such as Hits and Loan Date End contained missing values that needed to be addressed through careful handling and computation.
-Inconsistent Formatting: Various columns exhibited inconsistent formatting, necessitating data standardization for uniformity. Specifically, the Heights and Weights columns had values recorded in different units.
+- **Missing Values**: Columns such as Hits and Loan Date End contained missing values that needed to be addressed through careful handling and computation.
+- **Inconsistent Formatting**: Various columns exhibited inconsistent formatting, necessitating data standardization for uniformity. Specifically, the Heights and Weights columns had values recorded in different units.
 
 ### Tools Used
 
