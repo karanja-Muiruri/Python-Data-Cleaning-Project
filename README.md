@@ -2,25 +2,21 @@
 
 ### Introduction
 
-This repository contains the code and documentation for the data cleaning process of the FIFA21 dataset. 
-The goal of this project is to clean and enhance the dataset which provides information
-about players in the popular FIFA21 video game.
+This repository includes the code and documentation for the data cleaning procedures applied to the FIFA21 dataset. The objective of this project is to refine and improve the dataset, which contains details about players from the widely-known FIFA21 video game.
 
 ### Dataset Source and Overview
 
-The FIFA 21 dataset used in this project was obtained from a data cleaning challenge on Twitter which I was a part of.
-It consists of player attributes, statistics and other relevant information.
+The FIFA 21 dataset utilized in this project was sourced from a data cleaning challenge on Twitter. It encompasses player attributes, statistics, and other pertinent information.
 
-The original FIFA21 dataset contains 18K+ records of player data. Each record represents a unique player and includes
-various attributes such as player name, age, nationality, club, overall rating and more.
+The dataset originally includes over 18,000 records, with each record representing a distinct player. It features various attributes such as player name, age, nationality, club, overall rating, and more.
+
 
 ### Issues found in the data
 
-During the initial exploration and analysis of the FIFA21 dataset, several issues were identified including:
+During the initial exploration and analysis of the FIFA21 dataset, several issues were identified:
 
-- Missing values - The Hits and Loan Date End columns had missing values which required careful handling and computation.
-- Inconsistent formatting - This was observed across different columns making it necessary to standardize the data
-  for consistency. The Heights and Weights columns each had values stored in different units.
+Missing Values: Columns such as Hits and Loan Date End contained missing values that needed to be addressed through careful handling and computation.
+Inconsistent Formatting: Various columns exhibited inconsistent formatting, necessitating data standardization for uniformity. Specifically, the Heights and Weights columns had values recorded in different units.
 
 ### Tools Used
 
@@ -33,19 +29,22 @@ For the data cleaning project, the following tools and libraries were used:
 
 ### Data Cleaning Process
 
-The data cleaning process involved the following steps:
-1. **Data Understanding** - The dataset was thoroughly examined to understand the structure, columns and their meanings.
-   The data did not have a data dictionary attached. With the help of online sources I was able to create one that helped me
-   gain an understanding of what all the columns represented.
-2. **Data Exploration** - Exploratory Data Analysis was performed to gain insights into the data, identify patterns and uncover anomalies.
-3. **Handling missing values** - Through the EDA performed, I quickly realised there was a valid reason for the missing values in the Hits and Loan Date End columns.
-   The Hits column represented the number of times a player had been searched in the FIFA database. Since some players had never been searched, their records were blank.
-   For the Loan Date End column, this represented when the contracts for players who were *On Loan* would end. Since some of the players were free and others
-   on contract, their records were left blank.
-4. **Standardizing formatting** - Inconsistent formatting issues eg the values in the Heights and Weights columns that were stored with different units were resolved by
-   applying transformations, lambda functions and data normalization techniques.
-5. **Validation and quality checks** - The cleaned dataset underwent rigorous validation to ensure the quality, accuracy and integrity of the data.
+The data cleaning process comprised the following steps:
+
+1. **Data Understanding**: The dataset was carefully examined to comprehend its structure, columns, and their meanings. Since there was no data dictionary provided, I created one using online resources to clarify what each column represented.
+
+2. **Data Exploration**: Exploratory Data Analysis (EDA) was conducted to gain insights into the dataset, identify patterns, and uncover anomalies.
+
+3. **Handling Missing Values**: During EDA, it became evident why certain values were missing. The Hits column, which tracks the number of times a player was searched in the FIFA database, had blanks for players who were never searched. The Loan Date End column, indicating when loan contracts expired, had missing entries for players who were either free agents or under contract, not on loan.
+
+4. **Standardizing Formatting**: Inconsistent formatting issues, such as varying units in the Heights and Weights columns, were addressed through transformations, lambda functions, and data normalization techniques.
+
+5. **Validation and Quality Checks**: The cleaned dataset was subjected to rigorous validation to ensure its quality, accuracy, and integrity.
+
+
+
+
 
 ### Documentation
 
-For detailed information about the data cleaning process, please refer to the Jupyter notebooks provided in the repository.
+For detailed information about the data cleaning process, please refer to the Jupyter notebook (FIFA21_Python_Data_Cleaning_Jupiter NoteBook_Solution) provided in the repository.
